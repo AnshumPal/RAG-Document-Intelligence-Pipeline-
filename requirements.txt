@@ -21,4 +21,4 @@ sqlalchemy[asyncio]>=2.0.36
 
 # Utils
 python-dotenv==1.0.1
-pydantic-settings==2.2.1
+pydantic-settings>=2.4.0

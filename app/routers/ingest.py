@@ -71,7 +71,7 @@ async def ingest(
     return IngestResponse(doc_id=doc_id, chunk_count=len(chunks), status="success")
 
 
-@router.get("/docs", response_model=list[DocRecord])
+@router.get("/documents", response_model=list[DocRecord])
 async def list_docs(session: AsyncSession = Depends(get_session)):
     result = await session.execute(
         select(IngestionLog).order_by(IngestionLog.ingested_at.desc())
