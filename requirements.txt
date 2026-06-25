@@ -17,7 +17,7 @@ qdrant-client==1.9.1
 
 # PostgreSQL (async)
 asyncpg==0.30.0
-sqlalchemy[asyncio]==2.0.30
+sqlalchemy[asyncio]>=2.0.36
 
 # Utils
 python-dotenv==1.0.1
